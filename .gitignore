@@ -1,0 +1,7 @@
+# Ignore installers
+*.msi
+*.exe
+
+# Ignore installed directories containing application binaries
+autopsy/
+hxd/
