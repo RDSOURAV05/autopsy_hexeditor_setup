@@ -4,6 +4,7 @@ This repository contains documentation and setup instructions for configuring fo
 
 ## Contents
 
+- [website/](file:///C:/Users/PRO/OneDrive/Documents/GitHub/autopsy_hexeditor_setup/website/): Interactive web setup manual with dark/light mode, progress tracker, and step-by-step installation guides.
 - [Setup_Instructions.docx](file:///C:/Users/PRO/OneDrive/Documents/GitHub/autopsy_hexeditor_setup/Setup_Instructions.docx): A step-by-step installation guide to download, extract, and install the forensic analysis tools.
 
 ## Prerequisites & Official Download Links
