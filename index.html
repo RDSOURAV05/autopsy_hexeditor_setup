@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Forensic Suite Setup Guide | Autopsy & HxD</title>
-  <meta name="description" content="A clean, interactive setup and installation guide for Autopsy Forensic Browser and HxD Hex Editor on Windows.">
+  <title>Forensic & Network Suite Setup Guide</title>
+  <meta name="description" content="A clean, interactive setup and installation guide for Autopsy, HxD, Zenmap, and Advanced IP Scanner on Windows.">
   
   <!-- Tailwind CSS CDN -->
   <script src="https://cdn.tailwindcss.com"></script>
@@ -24,8 +24,8 @@
           </svg>
         </div>
         <div>
-          <h1 class="text-base sm:text-lg font-bold tracking-tight leading-none text-[var(--text-main)]">ForensicSetup</h1>
-          <span class="text-xs text-[var(--text-muted)] font-medium">Autopsy & HxD Suite</span>
+          <h1 class="text-base sm:text-lg font-bold tracking-tight leading-none text-[var(--text-main)]">IT & Forensic Setup</h1>
+          <span class="text-xs text-[var(--text-muted)] font-medium">Autopsy, HxD, Zenmap, Adv IP Scanner</span>
         </div>
       </div>
 
@@ -59,13 +59,13 @@
     <section class="text-center space-y-4 animate-fade-in">
       <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full text-xs font-semibold bg-cyan-500/10 text-[var(--accent-cyan)] border border-cyan-500/20">
         <span class="w-2 h-2 rounded-full bg-[var(--accent-cyan)] animate-pulse"></span>
-        Interactive Forensic Setup Manual
+        Interactive Tools Setup Manual
       </div>
       <h2 class="text-3xl sm:text-5xl font-extrabold tracking-tight text-[var(--text-main)]">
-        Install <span class="bg-clip-text text-transparent bg-gradient-to-r from-cyan-400 via-blue-500 to-indigo-500">Autopsy & HxD</span> with Confidence
+        Install <span class="bg-clip-text text-transparent bg-gradient-to-r from-cyan-400 via-blue-500 to-indigo-500">Forensic & Network Scanners</span>
       </h2>
       <p class="max-w-2xl mx-auto text-sm sm:text-base text-[var(--text-muted)]">
-        A step-by-step interactive walkthrough to download, configure, and verify digital forensics tools on your Windows machine.
+        A step-by-step interactive walkthrough to download, configure, and verify digital forensics and network tools on your Windows machine.
       </p>
 
       <!-- Overall Progress Card -->
@@ -78,7 +78,7 @@
             Installation Checklist
           </span>
           <span class="text-[var(--text-muted)]">
-            <strong id="completed-count" class="text-emerald-500">0</strong> / <span id="total-count">13</span> Completed
+            <strong id="completed-count" class="text-emerald-500">0</strong> / <span id="total-count">20</span> Completed
             (<span id="progress-text" class="text-[var(--accent-cyan)] font-bold">0%</span>)
           </span>
         </div>
@@ -99,15 +99,21 @@
     </section>
 
     <!-- Navigation Tabs -->
-    <div class="flex items-center justify-center gap-2 border-b border-[var(--border-color)] pb-3">
+    <div class="flex items-center justify-center gap-2 border-b border-[var(--border-color)] pb-3 flex-wrap">
       <button class="tab-btn active px-4 py-2 text-xs sm:text-sm rounded-lg hover:text-[var(--accent-blue)]" data-tab="all">
         All Guides
       </button>
       <button class="tab-btn px-4 py-2 text-xs sm:text-sm rounded-lg text-[var(--text-muted)] hover:text-[var(--accent-blue)]" data-tab="hxd-section">
-        Part 1: HxD Hex Editor
+        Part 1: HxD
       </button>
       <button class="tab-btn px-4 py-2 text-xs sm:text-sm rounded-lg text-[var(--text-muted)] hover:text-[var(--accent-blue)]" data-tab="autopsy-section">
-        Part 2: Autopsy Browser
+        Part 2: Autopsy
+      </button>
+      <button class="tab-btn px-4 py-2 text-xs sm:text-sm rounded-lg text-[var(--text-muted)] hover:text-[var(--accent-blue)]" data-tab="zenmap-section">
+        Part 3: Zenmap
+      </button>
+      <button class="tab-btn px-4 py-2 text-xs sm:text-sm rounded-lg text-[var(--text-muted)] hover:text-[var(--accent-blue)]" data-tab="advancedip-section">
+        Part 4: Adv IP Scanner
       </button>
     </div>
 
@@ -333,6 +339,136 @@
             </label>
           </div>
 
+        </div>
+      </div>
+    </section>
+
+    <!-- Part 3: Zenmap (Nmap) Section -->
+    <section id="zenmap-section" class="guide-section space-y-4">
+      <div class="p-6 rounded-2xl glass-card space-y-6">
+        
+        <div class="flex flex-col md:flex-row md:items-center justify-between gap-4 pb-4 border-b border-[var(--border-color)]">
+          <div class="space-y-1">
+            <div class="flex items-center gap-2">
+              <span class="px-2.5 py-0.5 rounded-md text-xs font-bold bg-purple-500/10 text-purple-500 border border-purple-500/20">Part 3</span>
+              <h3 class="text-xl sm:text-2xl font-bold text-[var(--text-main)]">Zenmap (Nmap) Setup</h3>
+            </div>
+            <p class="text-xs sm:text-sm text-[var(--text-muted)]">
+              The official graphical interface for Nmap Security Scanner. Perfect for deep security auditing.
+            </p>
+          </div>
+          <div class="flex items-center gap-3">
+            <a href="https://nmap.org/download.html" target="_blank" rel="noopener noreferrer"
+               class="inline-flex items-center gap-2 px-4 py-2 rounded-xl bg-gradient-to-r from-purple-600 to-indigo-600 hover:from-purple-500 hover:to-indigo-500 text-white text-xs sm:text-sm font-semibold shadow-md shadow-purple-500/20 transition-all">
+              <span>Download Portal</span>
+              <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path>
+              </svg>
+            </a>
+          </div>
+        </div>
+
+        <div class="space-y-3">
+          <div class="step-item p-4 rounded-xl flex items-start gap-3">
+            <input type="checkbox" id="step-zenmap-1" data-step-id="zenmap-1" class="step-checkbox mt-0.5">
+            <label for="step-zenmap-1" class="cursor-pointer space-y-1 select-none flex-grow">
+              <div class="flex items-center justify-between">
+                <span class="text-sm font-semibold text-[var(--text-main)]">1. Download & Run Installer</span>
+                <span class="text-xs text-[var(--text-muted)] font-mono">Step 1</span>
+              </div>
+              <p class="text-xs text-[var(--text-muted)]">Download <code class="font-mono text-xs px-1.5 py-0.5 rounded bg-[var(--border-color)]">nmap-setup.exe</code> from the official website and double-click it.</p>
+            </label>
+          </div>
+          <div class="step-item p-4 rounded-xl flex items-start gap-3">
+            <input type="checkbox" id="step-zenmap-2" data-step-id="zenmap-2" class="step-checkbox mt-0.5">
+            <label for="step-zenmap-2" class="cursor-pointer space-y-1 select-none flex-grow">
+              <div class="flex items-center justify-between">
+                <span class="text-sm font-semibold text-[var(--text-main)]">2. Accept Terms & Select Components</span>
+                <span class="text-xs text-[var(--text-muted)] font-mono">Step 2</span>
+              </div>
+              <p class="text-xs text-[var(--text-muted)]">Agree to the license terms. Ensure the <strong>Zenmap (GUI)</strong> and <strong>Npcap</strong> components are checked.</p>
+            </label>
+          </div>
+          <div class="step-item p-4 rounded-xl flex items-start gap-3">
+            <input type="checkbox" id="step-zenmap-3" data-step-id="zenmap-3" class="step-checkbox mt-0.5">
+            <label for="step-zenmap-3" class="cursor-pointer space-y-1 select-none flex-grow">
+              <div class="flex items-center justify-between">
+                <span class="text-sm font-semibold text-[var(--text-main)]">3. Install Npcap (Required)</span>
+                <span class="text-xs text-[var(--text-muted)] font-mono">Step 3</span>
+              </div>
+              <p class="text-xs text-[var(--text-muted)]">During installation, an Npcap prompt will appear. Follow its prompts to install this required packet capture driver.</p>
+            </label>
+          </div>
+          <div class="step-item p-4 rounded-xl flex items-start gap-3">
+            <input type="checkbox" id="step-zenmap-4" data-step-id="zenmap-4" class="step-checkbox mt-0.5">
+            <label for="step-zenmap-4" class="cursor-pointer space-y-1 select-none flex-grow">
+              <div class="flex items-center justify-between">
+                <span class="text-sm font-semibold text-[var(--text-main)]">4. Finish & Launch</span>
+                <span class="text-xs text-[var(--text-muted)] font-mono">Step 4</span>
+              </div>
+              <p class="text-xs text-[var(--text-muted)]">Complete the setup and launch Zenmap from the Start Menu. Try running an "Intense Scan" on a known IP.</p>
+            </label>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Part 4: Advanced IP Scanner Section -->
+    <section id="advancedip-section" class="guide-section space-y-4">
+      <div class="p-6 rounded-2xl glass-card space-y-6">
+        
+        <div class="flex flex-col md:flex-row md:items-center justify-between gap-4 pb-4 border-b border-[var(--border-color)]">
+          <div class="space-y-1">
+            <div class="flex items-center gap-2">
+              <span class="px-2.5 py-0.5 rounded-md text-xs font-bold bg-green-500/10 text-green-500 border border-green-500/20">Part 4</span>
+              <h3 class="text-xl sm:text-2xl font-bold text-[var(--text-main)]">Advanced IP Scanner Setup</h3>
+            </div>
+            <p class="text-xs sm:text-sm text-[var(--text-muted)]">
+              A reliable and fast network scanner for analyzing LAN, managing PCs, and IT administration.
+            </p>
+          </div>
+          <div class="flex items-center gap-3">
+            <a href="https://www.advanced-ip-scanner.com/" target="_blank" rel="noopener noreferrer"
+               class="inline-flex items-center gap-2 px-4 py-2 rounded-xl bg-gradient-to-r from-green-600 to-teal-600 hover:from-green-500 hover:to-teal-500 text-white text-xs sm:text-sm font-semibold shadow-md shadow-green-500/20 transition-all">
+              <span>Official Website</span>
+              <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path>
+              </svg>
+            </a>
+          </div>
+        </div>
+
+        <div class="space-y-3">
+          <div class="step-item p-4 rounded-xl flex items-start gap-3">
+            <input type="checkbox" id="step-advip-1" data-step-id="advip-1" class="step-checkbox mt-0.5">
+            <label for="step-advip-1" class="cursor-pointer space-y-1 select-none flex-grow">
+              <div class="flex items-center justify-between">
+                <span class="text-sm font-semibold text-[var(--text-main)]">1. Download & Run Executable</span>
+                <span class="text-xs text-[var(--text-muted)] font-mono">Step 1</span>
+              </div>
+              <p class="text-xs text-[var(--text-muted)]">Download <code class="font-mono text-xs px-1.5 py-0.5 rounded bg-[var(--border-color)]">Advanced_IP_Scanner.exe</code> from the official website and run it.</p>
+            </label>
+          </div>
+          <div class="step-item p-4 rounded-xl flex items-start gap-3">
+            <input type="checkbox" id="step-advip-2" data-step-id="advip-2" class="step-checkbox mt-0.5">
+            <label for="step-advip-2" class="cursor-pointer space-y-1 select-none flex-grow">
+              <div class="flex items-center justify-between">
+                <span class="text-sm font-semibold text-[var(--text-main)]">2. Choose Installation Type</span>
+                <span class="text-xs text-[var(--text-muted)] font-mono">Step 2</span>
+              </div>
+              <p class="text-xs text-[var(--text-muted)]">You can choose either to <strong>Install</strong> it permanently or <strong>Run</strong> it as a portable application without installation.</p>
+            </label>
+          </div>
+          <div class="step-item p-4 rounded-xl flex items-start gap-3">
+            <input type="checkbox" id="step-advip-3" data-step-id="advip-3" class="step-checkbox mt-0.5">
+            <label for="step-advip-3" class="cursor-pointer space-y-1 select-none flex-grow">
+              <div class="flex items-center justify-between">
+                <span class="text-sm font-semibold text-[var(--text-main)]">3. Scan Your Network</span>
+                <span class="text-xs text-[var(--text-muted)] font-mono">Step 3</span>
+              </div>
+              <p class="text-xs text-[var(--text-muted)]">Once open, hit the large "Scan" button at the top to discover devices, open ports, and shared folders on your local network.</p>
+            </label>
+          </div>
         </div>
       </div>
     </section>
