@@ -112,8 +112,8 @@
       <button class="tab-btn px-4 py-2 text-xs sm:text-sm rounded-lg text-[var(--text-muted)] hover:text-[var(--accent-blue)]" data-tab="zenmap-section">
         Part 3: Zenmap
       </button>
-      <button class="tab-btn px-4 py-2 text-xs sm:text-sm rounded-lg text-[var(--text-muted)] hover:text-[var(--accent-blue)]" data-tab="advancedip-section">
-        Part 4: Adv IP Scanner
+      <button class="tab-btn px-4 py-2 text-xs sm:text-sm rounded-lg text-[var(--text-muted)] hover:text-[var(--accent-blue)]" data-tab="angryip-section">
+        Part 4: Angry IP Scanner
       </button>
     </div>
 
@@ -413,23 +413,23 @@
       </div>
     </section>
 
-    <!-- Part 4: Advanced IP Scanner Section -->
-    <section id="advancedip-section" class="guide-section space-y-4">
+    <!-- Part 4: Angry IP Scanner Section -->
+    <section id="angryip-section" class="guide-section space-y-4">
       <div class="p-6 rounded-2xl glass-card space-y-6">
         
         <div class="flex flex-col md:flex-row md:items-center justify-between gap-4 pb-4 border-b border-[var(--border-color)]">
           <div class="space-y-1">
             <div class="flex items-center gap-2">
-              <span class="px-2.5 py-0.5 rounded-md text-xs font-bold bg-green-500/10 text-green-500 border border-green-500/20">Part 4</span>
-              <h3 class="text-xl sm:text-2xl font-bold text-[var(--text-main)]">Advanced IP Scanner Setup</h3>
+              <span class="px-2.5 py-0.5 rounded-md text-xs font-bold bg-orange-500/10 text-orange-500 border border-orange-500/20">Part 4</span>
+              <h3 class="text-xl sm:text-2xl font-bold text-[var(--text-main)]">Angry IP Scanner Setup</h3>
             </div>
             <p class="text-xs sm:text-sm text-[var(--text-muted)]">
-              A reliable and fast network scanner for analyzing LAN, managing PCs, and IT administration.
+              A blazing fast, cross-platform network scanner for ping sweeps and port scanning.
             </p>
           </div>
           <div class="flex items-center gap-3">
-            <a href="https://www.advanced-ip-scanner.com/" target="_blank" rel="noopener noreferrer"
-               class="inline-flex items-center gap-2 px-4 py-2 rounded-xl bg-gradient-to-r from-green-600 to-teal-600 hover:from-green-500 hover:to-teal-500 text-white text-xs sm:text-sm font-semibold shadow-md shadow-green-500/20 transition-all">
+            <a href="https://angryip.org/download/" target="_blank" rel="noopener noreferrer"
+               class="inline-flex items-center gap-2 px-4 py-2 rounded-xl bg-gradient-to-r from-orange-500 to-red-500 hover:from-orange-400 hover:to-red-400 text-white text-xs sm:text-sm font-semibold shadow-md shadow-orange-500/20 transition-all">
               <span>Official Website</span>
               <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path>
@@ -440,33 +440,33 @@
 
         <div class="space-y-3">
           <div class="step-item p-4 rounded-xl flex items-start gap-3">
-            <input type="checkbox" id="step-advip-1" data-step-id="advip-1" class="step-checkbox mt-0.5">
-            <label for="step-advip-1" class="cursor-pointer space-y-1 select-none flex-grow">
+            <input type="checkbox" id="step-angryip-1" data-step-id="angryip-1" class="step-checkbox mt-0.5">
+            <label for="step-angryip-1" class="cursor-pointer space-y-1 select-none flex-grow">
               <div class="flex items-center justify-between">
                 <span class="text-sm font-semibold text-[var(--text-main)]">1. Download & Run Executable</span>
                 <span class="text-xs text-[var(--text-muted)] font-mono">Step 1</span>
               </div>
-              <p class="text-xs text-[var(--text-muted)]">Download <code class="font-mono text-xs px-1.5 py-0.5 rounded bg-[var(--border-color)]">Advanced_IP_Scanner.exe</code> from the official website and run it.</p>
+              <p class="text-xs text-[var(--text-muted)]">Download the <code class="font-mono text-xs px-1.5 py-0.5 rounded bg-[var(--border-color)]">ipscan-*-setup.exe</code> from the official website and run it.</p>
             </label>
           </div>
           <div class="step-item p-4 rounded-xl flex items-start gap-3">
-            <input type="checkbox" id="step-advip-2" data-step-id="advip-2" class="step-checkbox mt-0.5">
-            <label for="step-advip-2" class="cursor-pointer space-y-1 select-none flex-grow">
+            <input type="checkbox" id="step-angryip-2" data-step-id="angryip-2" class="step-checkbox mt-0.5">
+            <label for="step-angryip-2" class="cursor-pointer space-y-1 select-none flex-grow">
               <div class="flex items-center justify-between">
-                <span class="text-sm font-semibold text-[var(--text-main)]">2. Choose Installation Type</span>
+                <span class="text-sm font-semibold text-[var(--text-main)]">2. Complete Installation</span>
                 <span class="text-xs text-[var(--text-muted)] font-mono">Step 2</span>
               </div>
-              <p class="text-xs text-[var(--text-muted)]">You can choose either to <strong>Install</strong> it permanently or <strong>Run</strong> it as a portable application without installation.</p>
+              <p class="text-xs text-[var(--text-muted)]">Follow the installation prompts to place Angry IP Scanner on your system. Note that it relies on Java, though recent installers often bundle it or use a lightweight wrapper.</p>
             </label>
           </div>
           <div class="step-item p-4 rounded-xl flex items-start gap-3">
-            <input type="checkbox" id="step-advip-3" data-step-id="advip-3" class="step-checkbox mt-0.5">
-            <label for="step-advip-3" class="cursor-pointer space-y-1 select-none flex-grow">
+            <input type="checkbox" id="step-angryip-3" data-step-id="angryip-3" class="step-checkbox mt-0.5">
+            <label for="step-angryip-3" class="cursor-pointer space-y-1 select-none flex-grow">
               <div class="flex items-center justify-between">
-                <span class="text-sm font-semibold text-[var(--text-main)]">3. Scan Your Network</span>
+                <span class="text-sm font-semibold text-[var(--text-main)]">3. Ping Sweep Your Network</span>
                 <span class="text-xs text-[var(--text-muted)] font-mono">Step 3</span>
               </div>
-              <p class="text-xs text-[var(--text-muted)]">Once open, hit the large "Scan" button at the top to discover devices, open ports, and shared folders on your local network.</p>
+              <p class="text-xs text-[var(--text-muted)]">Open the program, enter an IP range (e.g. 192.168.1.1 to 192.168.1.255), and click Start to rapidly scan for active devices.</p>
             </label>
           </div>
         </div>
